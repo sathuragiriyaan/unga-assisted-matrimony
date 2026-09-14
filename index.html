@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      "colors": {
+        "inverse-on-surface": "#f3f0ef",
+        "inverse-surface": "#303030",
+        "outline": "#7f7665",
+        "on-primary-fixed-variant": "#5b4300",
+        "primary-container": "#f8cc67",
+        "on-secondary-fixed-variant": "#663e05",
+        "tertiary-fixed-dim": "#ffb4a3",
+        "inverse-primary": "#ecc15d",
+        "on-secondary-container": "#7a4f17",
+        "surface-container-highest": "#e5e2e1",
+        "surface-bright": "#fcf9f8",
+        "surface-variant": "#e5e2e1",
+        "surface-dim": "#dcd9d9",
+        "tertiary": "#b52702",
+        "error": "#ba1a1a",
+        "champagne-light": "#FAEAB8",
+        "surface-tint": "#785a00",
+        "surface-container-lowest": "#ffffff",
+        "ivory-card": "#FAF8F5",
+        "secondary-fixed-dim": "#f6bb7a",
+        "primary-fixed": "#ffdf9b",
+        "on-error": "#ffffff",
+        "on-tertiary-container": "#ad2300",
+        "on-tertiary-fixed": "#3d0600",
+        "secondary": "#81551d",
+        "primary-fixed-dim": "#ecc15d",
+        "border-bronze-subtle": "rgba(194, 141, 80, 0.25)",
+        "on-tertiary": "#ffffff",
+        "primary": "#785a00",
+        "ivory-base": "#F8F5EB",
+        "on-secondary": "#ffffff",
+        "on-primary-fixed": "#251a00",
+        "tertiary-container": "#ffc4b6",
+        "outline-variant": "#d1c5b1",
+        "on-tertiary-fixed-variant": "#8b1a00",
+        "on-surface-variant": "#4e4637",
+        "charcoal-brown": "#2A1C12",
+        "background": "#fcf9f8",
+        "surface": "#fcf9f8",
+        "tertiary-fixed": "#ffdad2",
+        "on-secondary-fixed": "#2b1700",
+        "on-surface": "#1b1c1c",
+        "surface-container-low": "#f6f3f2",
+        "heart-magenta": "#D91C68",
+        "on-background": "#1b1c1c",
+        "bronze-deep": "#743A0F",
+        "secondary-fixed": "#ffddba",
+        "surface-container-high": "#eae7e7",
+        "on-error-container": "#93000a",
+        "error-container": "#ffdad6",
+        "secondary-container": "#ffc482",
+        "on-primary-container": "#725500",
+        "heart-coral": "#E94C28",
+        "surface-container": "#f0eded",
+        "on-primary": "#ffffff",
+        "border-gold-subtle": "rgba(248, 204, 103, 0.35)"
+      },
+      "borderRadius": {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      "spacing": {
+        "space-lg": "1.75rem",
+        "margin-lg": "5rem",
+        "gutter-lg": "2.5rem",
+        "space-2xl": "5rem",
+        "margin-md": "3rem",
+        "gutter": "1.5rem",
+        "space-xs": "0.25rem",
+        "space-sm": "0.5rem",
+        "space-xl": "3rem",
+        "space-md": "1rem",
+        "margin": "1.5rem"
+      },
+      "fontFamily": {
+        "label-sm": [
+          "Manrope"
+        ],
+        "eyebrow": [
+          "Manrope"
+        ],
+        "display-hero-mobile": [
+          "Playfair Display"
+        ],
+        "body-md": [
+          "Manrope"
+        ],
+        "label-md": [
+          "Manrope"
+        ],
+        "headline-sm": [
+          "Playfair Display"
+        ],
+        "headline-md-mobile": [
+          "Playfair Display"
+        ],
+        "body-sm": [
+          "Manrope"
+        ],
+        "display-hero": [
+          "Playfair Display"
+        ],
+        "headline-lg": [
+          "Playfair Display"
+        ],
+        "headline-md": [
+          "Playfair Display"
+        ],
+        "body-lg": [
+          "Manrope"
+        ],
+        "headline-lg-mobile": [
+          "Playfair Display"
+        ]
+      },
+      "fontSize": {
+        "label-sm": [
+          "11px",
+          {
+            "lineHeight": "16px",
+            "letterSpacing": "0.08em",
+            "fontWeight": "600"
+          }
+        ],
+        "eyebrow": [
+          "12px",
+          {
+            "lineHeight": "18px",
+            "letterSpacing": "0.15em",
+            "fontWeight": "700"
+          }
+        ],
+        "display-hero-mobile": [
+          "36px",
+          {
+            "lineHeight": "46px",
+            "letterSpacing": "-0.01em",
+            "fontWeight": "600"
+          }
+        ],
+        "body-md": [
+          "15px",
+          {
+            "lineHeight": "24px",
+            "fontWeight": "400"
+          }
+        ],
+        "label-md": [
+          "14px",
+          {
+            "lineHeight": "20px",
+            "letterSpacing": "0.04em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-sm": [
+          "22px",
+          {
+            "lineHeight": "30px",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-md-mobile": [
+          "24px",
+          {
+            "lineHeight": "32px",
+            "fontWeight": "500"
+          }
+        ],
+        "body-sm": [
+          "13px",
+          {
+            "lineHeight": "20px",
+            "fontWeight": "400"
+          }
+        ],
+        "display-hero": [
+          "56px",
+          {
+            "lineHeight": "68px",
+            "letterSpacing": "-0.02em",
+            "fontWeight": "600"
+          }
+        ],
+        "headline-lg": [
+          "40px",
+          {
+            "lineHeight": "52px",
+            "letterSpacing": "-0.015em",
+            "fontWeight": "500"
+          }
+        ],
+        "headline-md": [
+          "30px",
+          {
+            "lineHeight": "40px",
+            "fontWeight": "500"
+          }
+        ],
+        "body-lg": [
+          "18px",
+          {
+            "lineHeight": "30px",
+            "fontWeight": "400"
+          }
+        ],
+        "headline-lg-mobile": [
+          "28px",
+          {
+            "lineHeight": "38px",
+            "fontWeight": "500"
+          }
+        ]
+      }
+    }
+  }
+};</script></head><body class="bg-ivory-base text-charcoal-brown font-body-md text-body-md antialiased selection:bg-primary-container selection:text-charcoal-brown"><header class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-ivory-base/90 backdrop-blur-xl shadow-[0_1px_12px_rgba(42,28,18,0.06)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-4 shrink-0"><a class="flex items-center gap-3 group" data-path="home" href="#"><img alt="UNGA Assisted Matrimony Logo" class="h-14 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UTgIMz_7jN0oRrNBfDiOFoPsD2q8id-55EmkI4eMo1hKoTLbLa6czCDgq1WYNLndKY6RsbRGrUUTAaLXmVb4vBpHHRWbqj1Zu797kueskbv77h0gE1LZ62TxrkHVBtCYf8jC4S-7gtEYLfN02kBzN623ughIMO-765RflJ12Gg-hOhuItdB1Yi4kT0MTUpiw_zr6bsW7JVV1ldeyipD9ahTtCndkoMSIufjrBrUS19ZHHN1ssj-BAnhj0FcC-WgV9iv541MVmVLw"/><div class="hidden sm:flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-charcoal-brown font-semibold leading-none">UNGA</span><span class="font-eyebrow text-eyebrow tracking-widest text-secondary uppercase mt-0.5">Assisted Matrimony</span></div></a></div><nav class="hidden xl:flex items-center gap-8" data-active-classes="text-charcoal-brown font-bold"><a aria-current="page" class="transition-colors text-charcoal-brown font-bold" data-path="home" href="#">Home</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-charcoal-brown transition-colors" data-path="about" href="#">About</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-charcoal-brown transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-charcoal-brown transition-colors" data-path="services" href="#">Services</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-charcoal-brown transition-colors" data-path="why-choose-us" href="#">Why Choose Us</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-charcoal-brown transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-4 shrink-0"><a class="inline-flex items-center justify-center h-12 px-space-lg rounded-full bg-primary-container text-charcoal-brown font-label-md text-label-md shadow-[0_4px_16px_rgba(194,141,80,0.2)] hover:bg-secondary-container hover:text-charcoal-brown transition-all duration-200" data-path="book-a-consultation" href="#">Book a Consultation</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1UTgIMz_7jN0oRrNBfDiOFoPsD2q8id-55EmkI4eMo1hKoTLbLa6czCDgq1WYNLndKY6RsbRGrUUTAaLXmVb4vBpHHRWbqj1Zu797kueskbv77h0gE1LZ62TxrkHVBtCYf8jC4S-7gtEYLfN02kBzN623ughIMO-765RflJ12Gg-hOhuItdB1Yi4kT0MTUpiw_zr6bsW7JVV1ldeyipD9ahTtCndkoMSIufjrBrUS19ZHHN1ssj-BAnhj0FcC-WgV9iv541MVmVLw"/></div></div></header><main class="w-full pt-20 bg-ivory-base min-h-screen"><div class="flex flex-col w-full">
+<!-- SECTION 1: FULL-SCREEN CINEMATIC HERO -->
+<section class="relative w-full min-h-screen flex items-center justify-center -mt-20 overflow-hidden bg-charcoal-brown">
+<!-- Hero Image Background with Scrim -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Regal South Indian bride dressed in exquisite crimson and gold Kanjivaram silk saree standing alongside the groom in an embroidered ivory raw silk sherwani and traditional turban within an opulent sunlit stone heritage palace corridor lined with carved pillars and warm sunset backlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkrOCcmTtvt58iaBHfrM2js3706_7rvsodPJcGgd49qFmzW5oKTBG9biDVcn7tuqo2mn_KVrRBDuRDcRJ1RIB_GL4nd3LIohjsnN0YcDxfmLCNPGaMhaoQ2u0L05265mYw2gQaasEtQ4IG33n04JFGFlE08IUzh2oi8JSVEJsTP56kSbNNeiLT-t6dBopdtebqoFwLmXRW7kD40fEvX8TSmqwwshiHSAAthSS0vmcXjI14WFdlDCwe');">
+</div>
+<!-- Editorial Multi-layer Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-brown via-charcoal-brown/50 to-charcoal-brown/30"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-charcoal-brown/80 via-transparent to-charcoal-brown/60"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 max-w-5xl mx-auto px-6 lg:px-12 pt-32 pb-24 text-center flex flex-col items-center">
+<!-- Eyebrow Badge -->
+<div class="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-charcoal-brown/60 backdrop-blur-md mb-8 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-champagne-light uppercase">Assisted Matrimonial Concierge</span>
+</div>
+<!-- Primary Title -->
+<h1 class="font-display-hero text-display-hero text-surface-container-lowest max-w-4xl tracking-tight leading-tight drop-shadow-sm">
+        A More Refined Way to Find Your Life Partner
+      </h1>
+<!-- Poetic Sub-tagline -->
+<p class="font-headline-sm text-headline-sm text-champagne-light/90 italic font-normal mt-4 mb-10 max-w-2xl">
+        “A Trusted Beginning to a Beautiful Forever”
+      </p>
+<!-- Action CTAs -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center h-14 px-10 rounded-full bg-primary-container text-charcoal-brown font-label-md text-label-md uppercase tracking-wider shadow-xl hover:bg-champagne-light transition-all duration-300 transform hover:-translate-y-0.5" href="#consultation">
+          Book a Consultation
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center h-14 px-9 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-champagne-light font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-lowest/20 transition-all duration-300 group" href="#matchmaker">
+<span>Talk to a Matchmaker</span>
+<span class="material-symbols-outlined text-base ml-2 transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- Trust Pillars Minimal Bar -->
+<div class="mt-16 pt-8 max-w-3xl w-full flex flex-wrap items-center justify-around gap-6 text-champagne-light/80 font-label-sm text-label-sm tracking-widest uppercase">
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm">verified_user</span> 100% Confidential
+        </span>
+<span class="inline-block w-1 h-1 rounded-full bg-champagne-light/30"></span>
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm">diversity_1</span> Family Curated
+        </span>
+<span class="inline-block w-1 h-1 rounded-full bg-champagne-light/30"></span>
+<span class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-sm">handshake</span> Private Advisory
+        </span>
+</div>
+<!-- Scroll Indicator -->
+<div class="mt-14 flex flex-col items-center gap-2 text-champagne-light/70 font-label-sm text-label-sm tracking-[0.2em] uppercase">
+<span>Discover the UNGA experience</span>
+<span class="material-symbols-outlined text-primary-container animate-bounce">arrow_downward</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: BRAND INTRODUCTION -->
+<section class="w-full py-28 px-6 lg:px-12 bg-ivory-base relative overflow-hidden">
+<div class="max-w-4xl mx-auto text-center flex flex-col items-center">
+<!-- Section Eyebrow -->
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-secondary uppercase mb-4">
+        The UNGA Experience
+      </span>
+<!-- Headline -->
+<h2 class="font-headline-lg text-headline-lg text-charcoal-brown font-normal mb-8">
+        A Matrimonial Experience, Made Personal.
+      </h2>
+<!-- Subtle Ornamental Monogram / Motif -->
+<div class="flex items-center justify-center gap-4 mb-10 w-full max-w-xs">
+<span class="h-px flex-1 bg-gradient-to-r from-transparent to-secondary/30"></span>
+<span class="material-symbols-outlined text-secondary text-lg">spa</span>
+<span class="h-px flex-1 bg-gradient-to-l from-transparent to-secondary/30"></span>
+</div>
+<!-- Verbatim Body Copy -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed text-center font-normal">
+        Finding a life partner is one of life’s most meaningful journeys. At UNGA Assisted Matrimony, we bring a thoughtful and personal approach to the experience—creating a space where meaningful connections can begin with trust, care and understanding.
+      </p>
+<!-- Signature Statement Pill -->
+<div class="mt-12 inline-flex items-center gap-4 px-6 py-3 rounded-full bg-surface-container-low shadow-sm">
+<span class="w-2 h-2 rounded-full bg-heart-magenta"></span>
+<span class="font-label-md text-label-md text-charcoal-brown tracking-wide">
+          Bespoke Matchmaking for South Indian Families Worldwide
+        </span>
+<span class="w-2 h-2 rounded-full bg-heart-coral"></span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: DEDICATED MATCHMAKER ASSISTANCE (Primary Service Highlight) -->
+<section class="w-full py-28 px-6 lg:px-12 bg-surface-container-low relative" id="matchmaker">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column: Editorial Photography Card -->
+<div class="lg:col-span-6 relative">
+<div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl bg-surface-container-lowest p-2">
+<div class="w-full h-[520px] rounded-xl bg-cover bg-center relative" data-alt="Joyful South Indian bride and groom smiling warmly in heritage stone courtyard surrounded by brass lamps, garlands of jasmine, and auspicious floral kolam decorations, the bride wearing an ivory gold silk saree and the groom in a complementary tussar silk kurta." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBGgzQrP0krjOIIMgUEFRCh0qRWU3eG6WIFClcN4_DLk98oyLPjkL87mEwiXhxymCVo2Ma4cwx-jiKOEZdg5MwlAIC7s2ZO7zx3t6PVay-F1yDM8HjBpHsR96DHkHD1CvSff_LmcCq5PbvZnZvCyzZXS_balPNxd5EpSKbWbCnVNdbG-DzrTOvm7cDFBlh2AwfAbldqCNF3oJxvO09fnK6YmfpTmEzsSJiiIHKFV-mZzA8RAbAPwbQ2');">
+<!-- Soft interior vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-brown/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-6 left-6 right-6 p-5 rounded-xl bg-charcoal-brown/80 backdrop-blur-md text-surface-container-lowest">
+<span class="font-eyebrow text-eyebrow tracking-widest text-primary-container uppercase block mb-1">
+                  Private Family Office
+                </span>
+<p class="font-headline-sm text-headline-sm text-surface-container-lowest font-medium leading-tight">
+                  Guided with generational respect &amp; modern sensibility.
+                </p>
+</div>
+</div>
+</div>
+<!-- Decorative Ambient Layer behind Card -->
+<div class="absolute -top-6 -left-6 w-full h-full rounded-2xl bg-champagne-light/30 -z-0 hidden sm:block"></div>
+</div>
+<!-- Right Column: Service Narrative -->
+<div class="lg:col-span-6 flex flex-col items-start">
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-secondary uppercase mb-3">
+            Personalised Attention
+          </span>
+<h3 class="font-headline-lg text-headline-lg text-charcoal-brown font-normal leading-tight mb-6">
+            Someone Who Understands Your Journey
+          </h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed mb-8">
+            With dedicated matchmaker assistance, your matrimonial journey receives personal attention from someone who understands that every individual and every family is different.
+          </p>
+<!-- 3 Trust Pillars -->
+<div class="w-full flex flex-col gap-5 mb-10">
+<!-- Pillar 1 -->
+<div class="flex items-start gap-4 p-5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-champagne-light flex items-center justify-center shrink-0 text-bronze-deep mt-0.5">
+<span class="material-symbols-outlined text-xl">person_pin</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-charcoal-brown font-medium">Dedicated Human Matchmaker</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Curated family-to-family coordination with single-point contact, avoiding indiscriminate profiles.
+                </p>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="flex items-start gap-4 p-5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-champagne-light flex items-center justify-center shrink-0 text-bronze-deep mt-0.5">
+<span class="material-symbols-outlined text-xl">lock</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-charcoal-brown font-medium">100% Confidential &amp; Discretion Guaranteed</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Your identity, family pedigree, and contact details are shielded behind strictly verified introductions.
+                </p>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="flex items-start gap-4 p-5 rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-10 h-10 rounded-full bg-champagne-light flex items-center justify-center shrink-0 text-bronze-deep mt-0.5">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-charcoal-brown font-medium">Thoughtful Compatibility &amp; Values Alignment</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Harmonizing worldview, cultural heritage, educational distinction, and life aspirations.
+                </p>
+</div>
+</div>
+</div>
+<!-- Section CTA Button -->
+<a class="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-primary-container text-charcoal-brown font-label-md text-label-md uppercase tracking-wider shadow-lg hover:bg-champagne-light transition-all duration-300 group" href="#consultation">
+<span>Talk to a Matchmaker</span>
+<span class="material-symbols-outlined text-lg transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: EMOTIONAL PREMIUM IMAGE STATEMENT -->
+<section class="relative w-full h-[480px] md:h-[540px] flex items-center justify-center overflow-hidden bg-charcoal-brown">
+<!-- Atmospheric Visual Background -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center scale-100 filter brightness-95" data-alt="Intimate traditional South Indian wedding altar with glowing sacred brass kuthuvilakku oil lamps, strands of fragrant white jasmine flowers, ceremonial coconuts, silk drapery, and warm golden embers of the holy fire in soft atmospheric cinematic focus." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1x3CqP-zqU-AK-Iw9Rc2WpvPvIuJbBBJllPuPXm3RCP65TV3_9ETdVHjVgZBr2AHPAu1ONeA-VDjSnmrRsilBx-4UslmLXixKf8xFd42GYqvXTei0K5-Y4CfR2I34nCaAlLkOLJYl5RtFBBmcD403cLN5F-N3IP4HVbkLwOMr8uGG1PvQMNvy234iD5jP_uovedQOBj_EXhQZfw0D8d5Ue1n1IS8foACEjEehx_PKnh4Gu1kC5skV');">
+</div>
+<!-- Deep Warm Scrim -->
+<div class="absolute inset-0 bg-charcoal-brown/75 backdrop-blur-[2px]"></div>
+<!-- Central Statement Content -->
+<div class="relative z-10 max-w-3xl mx-auto px-6 text-center flex flex-col items-center">
+<!-- Filigree Micro Icon -->
+<div class="w-12 h-12 rounded-full bg-champagne-light/20 flex items-center justify-center text-champagne-light mb-6">
+<span class="material-symbols-outlined text-2xl">auto_awesome</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-champagne-light font-normal italic leading-snug tracking-normal">
+        “Some beginnings deserve to be beautiful.”
+      </h2>
+<p class="font-label-md text-label-md text-surface-container-lowest/80 tracking-[0.25em] uppercase mt-6">
+        Thoughtfully presented. Personally guided.
+      </p>
+<div class="mt-8 flex items-center gap-3">
+<span class="w-8 h-px bg-primary-container/40"></span>
+<span class="text-xs text-primary-container uppercase tracking-widest font-label-sm">UNGA Matrimony</span>
+<span class="w-8 h-px bg-primary-container/40"></span>
+</div>
+</div>
+</section>
+<!-- SECTION 5: WHY UNGA -->
+<section class="w-full py-28 px-6 lg:px-12 bg-ivory-base">
+<div class="max-w-7xl mx-auto">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-16 flex flex-col items-center">
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-secondary uppercase mb-3">
+          Why UNGA
+        </span>
+<h2 class="font-headline-lg text-headline-lg text-charcoal-brown font-normal mb-4">
+          A Matrimonial Experience, Made Personal.
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+          Thoughtful, refined and centred around the people behind every journey.
+        </p>
+</div>
+<!-- 3 Refined Feature Blocks Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 01 -->
+<div class="group relative rounded-2xl bg-ivory-card p-10 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
+<!-- Subtle Top Accent line -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-secondary to-primary-container"></div>
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="font-headline-lg text-headline-lg text-secondary font-medium tracking-tight">01</span>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-primary-container group-hover:text-charcoal-brown transition-colors">
+<span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+</div>
+</div>
+<h3 class="font-eyebrow text-eyebrow tracking-[0.2em] text-charcoal-brown uppercase mb-3">
+              Personal Attention
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A journey designed around people, not algorithms. We take the time to deeply understand family values, lifestyles, and partner aspirations.
+            </p>
+</div>
+<div class="mt-8 pt-6 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span>Individual Curation</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+</div>
+<!-- Card 02 -->
+<div class="group relative rounded-2xl bg-ivory-card p-10 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
+<!-- Subtle Top Accent line -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-champagne-light to-secondary"></div>
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="font-headline-lg text-headline-lg text-secondary font-medium tracking-tight">02</span>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-primary-container group-hover:text-charcoal-brown transition-colors">
+<span class="material-symbols-outlined text-2xl">hub</span>
+</div>
+</div>
+<h3 class="font-eyebrow text-eyebrow tracking-[0.2em] text-charcoal-brown uppercase mb-3">
+              Thoughtful Connections
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              A considered approach to meaningful relationships. Every suggestion is deliberated through qualitative compatibility and genuine life perspective.
+            </p>
+</div>
+<div class="mt-8 pt-6 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span>Value-First Alignment</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+</div>
+<!-- Card 03 -->
+<div class="group relative rounded-2xl bg-ivory-card p-10 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between overflow-hidden">
+<!-- Subtle Top Accent line -->
+<div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-heart-coral to-primary-container"></div>
+<div>
+<div class="flex items-center justify-between mb-8">
+<span class="font-headline-lg text-headline-lg text-secondary font-medium tracking-tight">03</span>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-secondary group-hover:bg-primary-container group-hover:text-charcoal-brown transition-colors">
+<span class="material-symbols-outlined text-2xl">workspace_premium</span>
+</div>
+</div>
+<h3 class="font-eyebrow text-eyebrow tracking-[0.2em] text-charcoal-brown uppercase mb-3">
+              Refined Experience
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Every interaction designed with care, privacy and elegance. Discreet coordination without the chaos of public registries or unfiltered messaging.
+            </p>
+</div>
+<div class="mt-8 pt-6 flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<span>Complete Discretion</span>
+<span class="material-symbols-outlined text-sm">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: CONSULTATION CTA & DIRECT REACH -->
+<section class="w-full py-28 px-6 lg:px-12 bg-charcoal-brown text-inverse-on-surface relative overflow-hidden" id="consultation">
+<!-- Atmospheric Warm Radial Ambient Glow -->
+<div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-primary/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-40 -left-40 w-96 h-96 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<div class="max-w-5xl mx-auto relative z-10 flex flex-col items-center text-center">
+<!-- Section Tag -->
+<span class="font-eyebrow text-eyebrow tracking-[0.25em] text-champagne-light uppercase mb-4">
+        Begin With Confidence
+      </span>
+<!-- Headline -->
+<h2 class="font-headline-lg text-headline-lg text-primary-container font-normal leading-tight mb-4">
+        Begin Your Journey
+      </h2>
+<!-- Subtitle -->
+<p class="font-headline-sm text-headline-sm text-champagne-light/90 italic font-normal mb-10 max-w-xl">
+        Your story deserves a thoughtful beginning.
+      </p>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-5 w-full sm:w-auto mb-16">
+<a class="w-full sm:w-auto inline-flex items-center justify-center h-14 px-10 rounded-full bg-primary-container text-charcoal-brown font-label-md text-label-md uppercase tracking-wider shadow-2xl hover:bg-champagne-light transition-all duration-300" href="tel:+919444025530">
+          Book a Consultation
+        </a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center h-14 px-9 rounded-full bg-surface-container-lowest/10 backdrop-blur-md text-champagne-light font-label-md text-label-md uppercase tracking-wider hover:bg-surface-container-lowest/20 transition-all duration-300 group" href="https://wa.me/919444025530" rel="noopener noreferrer" target="_blank">
+<span>Talk to a Matchmaker</span>
+<span class="material-symbols-outlined text-base ml-2 transition-transform duration-300 group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- Quick Concierge Direct Contact Bar -->
+<div class="w-full max-w-4xl p-8 rounded-2xl bg-surface-container-highest/10 backdrop-blur-md shadow-inner">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left divide-y md:divide-y-0 md:divide-x divide-outline-variant/20">
+<!-- Call & WhatsApp -->
+<div class="flex items-center gap-4 pt-4 md:pt-0">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl">call</span>
+</div>
+<div>
+<span class="font-eyebrow text-eyebrow text-outline-variant tracking-wider uppercase block">Direct Call / WhatsApp</span>
+<a class="font-headline-sm text-headline-sm text-surface-container-lowest hover:text-champagne-light transition-colors font-medium" href="tel:+919444025530">
+                +91 94440 25530
+              </a>
+</div>
+</div>
+<!-- Direct Email -->
+<div class="flex items-center gap-4 pt-6 md:pt-0 md:pl-8">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl">mail</span>
+</div>
+<div>
+<span class="font-eyebrow text-eyebrow text-outline-variant tracking-wider uppercase block">Private Advisory</span>
+<a class="font-label-md text-label-md text-surface-container-lowest hover:text-champagne-light transition-colors break-all" href="mailto:ungaassistedmatrimony@gmail.com">
+                ungaassistedmatrimony@gmail.com
+              </a>
+</div>
+</div>
+<!-- Location & Timing -->
+<div class="flex items-center gap-4 pt-6 md:pt-0 md:pl-8">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-2xl">location_on</span>
+</div>
+<div>
+<span class="font-eyebrow text-eyebrow text-outline-variant tracking-wider uppercase block">Principal Concierge</span>
+<p class="font-label-md text-label-md text-surface-container-lowest">
+                Chennai <span class="text-primary-container">•</span> 10:00 AM – 6:00 PM
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-charcoal-brown text-inverse-on-surface pt-space-2xl pb-space-xl"><div class="max-w-7xl mx-auto px-6 lg:px-12"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-2xl"><div class="lg:col-span-5 flex flex-col items-start gap-4"><a class="flex items-center gap-3" data-path="home" href="#"><img alt="UNGA Assisted Matrimony" class="h-16 w-auto object-contain brightness-105" src="https://lh3.googleusercontent.com/aida/AEtjO1UTgIMz_7jN0oRrNBfDiOFoPsD2q8id-55EmkI4eMo1hKoTLbLa6czCDgq1WYNLndKY6RsbRGrUUTAaLXmVb4vBpHHRWbqj1Zu797kueskbv77h0gE1LZ62TxrkHVBtCYf8jC4S-7gtEYLfN02kBzN623ughIMO-765RflJ12Gg-hOhuItdB1Yi4kT0MTUpiw_zr6bsW7JVV1ldeyipD9ahTtCndkoMSIufjrBrUS19ZHHN1ssj-BAnhj0FcC-WgV9iv541MVmVLw"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary-container font-semibold">UNGA</span><span class="font-eyebrow text-eyebrow text-champagne-light tracking-widest uppercase">Assisted Matrimony</span></div></a><p class="font-headline-md text-headline-md text-champagne-light italic font-normal max-w-sm mt-2 leading-snug">“A Trusted Beginning to a Beautiful Forever”</p><p class="font-body-sm text-body-sm text-outline-variant max-w-md">A premier South Indian high-touch matrimonial sanctuary. Offering bespoke matchmaking, privacy-first introductions, and discrete family office counsel across Chennai, Bengaluru, and the global diaspora.</p></div><div class="lg:col-span-3 flex flex-col gap-4"><span class="font-eyebrow text-eyebrow tracking-widest uppercase text-primary-container">Curated Portals</span><nav class="flex flex-col gap-3" data-active-classes="text-primary-container font-semibold"><a aria-current="page" class="transition-colors text-primary-container font-semibold" data-path="home" href="#">Home</a><a class="font-body-md text-body-md text-outline-variant hover:text-champagne-light transition-colors" data-path="about" href="#">About</a><a class="font-body-md text-body-md text-outline-variant hover:text-champagne-light transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-body-md text-body-md text-outline-variant hover:text-champagne-light transition-colors" data-path="services" href="#">Services</a><a class="font-body-md text-body-md text-outline-variant hover:text-champagne-light transition-colors" data-path="why-choose-us" href="#">Why Choose Us</a><a class="font-body-md text-body-md text-outline-variant hover:text-champagne-light transition-colors" data-path="contact" href="#">Contact Concierge</a></nav></div><div class="lg:col-span-4 flex flex-col gap-4"><span class="font-eyebrow text-eyebrow tracking-widest uppercase text-primary-container">Private Concierge Desk</span><div class="flex flex-col gap-3 font-body-sm text-body-sm text-outline-variant"><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-container text-lg mt-0.5">call</span><div><span class="block text-champagne-light font-label-md text-label-md">Phone &amp; WhatsApp</span><span>+91 94440 25530</span></div></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-container text-lg mt-0.5">mail</span><div><span class="block text-champagne-light font-label-md text-label-md">Direct Advisory</span><span>ungaassistedmatrimony@gmail.com</span></div></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-container text-lg mt-0.5">location_on</span><div><span class="block text-champagne-light font-label-md text-label-md">Principal Office</span><span>Chennai, Tamil Nadu</span></div></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-container text-lg mt-0.5">schedule</span><div><span class="block text-champagne-light font-label-md text-label-md">Bespoke Hours</span><span>10:00 AM – 6:00 PM IST (Mon – Sat)</span></div></div><div class="flex items-start gap-3"><span class="material-symbols-outlined text-primary-container text-lg mt-0.5">photo_camera</span><div><span class="block text-champagne-light font-label-md text-label-md">Social Dispatch</span><span class="text-champagne-light">@unga_assisted_matrimony</span></div></div></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-4 font-body-sm text-body-sm text-outline-variant"><p>© 2025 UNGA Assisted Matrimony. Personal Concierge Assisted Matrimony. All rights reserved.</p><p class="font-label-sm text-label-sm text-champagne-light tracking-wide uppercase">Confidential • Verified • Bespoke</p></div></div></footer></body></html>
